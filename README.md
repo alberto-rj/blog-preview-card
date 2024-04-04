@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Demo](https://your-solution-url.com)
-- Live Site URL: [Repository](https://your-live-site-url.com)
+- Solution URL: [Repository](https://github.com/alberto-rj/blog-preview-card)
+- Live Site URL: [Demo](https://alberto-rj.github.io/blog-preview-card/)
 
 ## My process
 
