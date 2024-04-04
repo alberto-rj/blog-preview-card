@@ -1,0 +1,233 @@
+@font-face {
+  font-family: Figtree;
+  src: url("/assets/fonts/Figtree.ttf");
+  font-display: swap;
+}
+
+:root {
+  
+  /* Colors */
+  --color-primary: #F4D04E;
+  --color-secondary: #000000;
+  --color-white: #FFFFFF;
+  --color-grey: #6b6969;
+
+  /* Typography */
+  --font-sans-serif: Figtree, sans-serif;
+  --heading-font-size: 1.5rem;
+  --line-height: 1.5;
+  --medium-font-size: 1rem;
+  --regular-font-size: 0.875rem;
+}
+
+*::before,
+*,
+*::after {
+  box-sizing: border-box;
+  margin: 0; 
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-primary);
+  color: var(--color-grey);
+  font-family: var(--font-sans-serif);
+  font-size: var(--medium-font-size);
+  line-height: var(--line-height);
+}
+
+.page {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.main-content {
+  margin: 1.5rem 1rem;
+}
+
+.card {
+  background-color: var(--color-white);
+  border-radius: 1.25rem;
+  box-shadow: 8px 8px 0 0 var(--color-secondary);
+  max-width: 24rem;
+  padding: 1.5rem;
+  opacity: 0;
+}
+
+  .card__thump {
+    border-radius: 0.625rem;
+    height: auto;
+    width: 100%;
+  }
+
+  .card__tags {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+  }
+    .card__tag--learning {
+      background-color: var(--color-primary);
+      border-radius: 0.25rem;
+      color: var(--color-secondary);
+      font-size: var(--regular-font-size);
+      font-weight: 800;
+      padding: 0.25rem 0.5rem;
+    }
+
+  .card__date,
+  .card__title,
+  .card__description {
+    margin-top: 0.75rem;
+  }
+
+  .card__date {
+    color: var(--color-secondary);
+  }
+
+  .card__date {
+    font-size: var(--regular-font-size);
+    font-weight: 500;
+  }
+
+  .card__title {
+    font-size: var(--heading-font-size);
+  }
+
+    .card__title a {
+      color: var(--color-secondary);
+      text-decoration: none;
+      transition: 0.25s ease-in-out color;
+    }
+
+    .card__title a:hover {
+      color: var(--color-primary);
+    }
+
+    .card__title a:focus-visible {
+      color: var(--color-primary);
+      outline: 2px solid var(--color-secondary);
+    }
+
+  .card__user {
+    align-items: center;
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+  }
+    .card__user-photo {
+      border-radius: 50%;
+      height: 2rem;
+      width: 2rem;
+    }
+
+    .card__user-name {
+      color: var(--color-secondary);
+      font-size: var(--regular-font-size);
+      font-weight: 800;
+    }
+
+.attribution {
+  color: var(--color-secondary);
+  font-size: var(--regular-font-size);
+  margin-bottom: 0.75rem;
+}
+  .attribution p {
+    padding: 0 4rem;
+    text-align: center;
+  }
+
+    .attribution a {
+      color: var(--color-secondary);
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.25rem ease-in-out color;
+    }
+
+    .attribution a:hover { 
+      text-decoration: underline;
+    }
+    
+    .attribution a:focus-visible {
+      outline: 2px solid var(--color-secondary);
+    }
+
+
+/* Animation */
+.translate-from-top {
+  animation: translate-from-top 1.4s ease-in-out forwards;
+}
+
+.translate-from-bottom {
+  animation: translate-from-bottom 1.4s ease-in-out forwards;
+}
+
+.translate-from-left {
+  animation: translate-from-left 1.4s ease-in-out forwards;
+}
+
+.traslate-dalay-1 {
+  animation-delay: 0.2s;
+}
+
+.traslate-dalay-2 {
+  animation-delay: 0.4s;
+}
+
+.traslate-dalay-3 {
+  animation-delay: 0.6s;
+}
+
+.traslate-dalay-4 {
+  animation-delay: 0.8s;
+}
+
+.traslate-dalay-5 {
+  animation-delay: 1.0s;
+}
+
+.traslate-dalay-6 {
+  animation-delay: 1.2s;
+}
+
+@keyframes translate-from-top {
+  
+  0% {
+    transform: translateY(-3rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes translate-from-bottom {
+  
+  0% {
+    transform: translateY(3rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes translate-from-left {
+  
+  0% {
+    transform: translateX(-0.875rem);
+    opacity: 0;
+  }
+
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
